@@ -14,7 +14,7 @@ Assim, para cada valor de excitacao, o valor de emissao observado na amostra é 
 
 Em forma matricial:
 
-*FluorAmostra = concentracoes x Referencias*
+**FluorAmostra = concentracoes x Referencias**
 
 FluorAmostra - [1,1581]
 concentracoes - [1,6]
@@ -22,31 +22,44 @@ Referencias - [6,1581]
 
 
 Script depende de quatro arquivos de entrada (.csv) e retorna dois arquivos (.csv) com as concentracoes estimadas dos pigmentos (mg/L).
-Arquivos de entrada:
+**Arquivos de entrada:**
 - Arquivo metadados 
+
 - Arquivo Fluorescencias do Branco
+
 - Arquivo Fluorescencias das Referencias
+
 - Arquivo Fluorescencias da amostra
 
-Saida:
+**Saida:**
 - Concentracao dos pigmentos a partir da solucao exata do metodo de minimos quadrados. Pode ter concentraóes com valores negativos;
+
 - Concentracao dos pigmentos a partir da solucao aproximada, removendo valores negativos.
 
 
-Arquivo metadados:
+**Arquivo metadados:**
 Ponto_campo; Amostra; Data; Volume_Coleta_L; Volume_extrato_ml; Diluicao; Extrato_Dil; Nome_Fluor
+
 Ponto_campo       - Ponto de Coleta
+
 Amostra           - Codigo da Amostra
+
 Data              - Data de coleta
+
 Volume_Coleta_L   - Volume da coleta em litros
+
 Volume_extrato_ml - Volume da extracao em mL
+
 Diluicao          - Diluicao usada pra ler o extrato no espectrofluorimetro
+
 Extrato_Dil       - Porduto entre o volume do extrato e a diluicao
+
 Nome_Fluor        - Nome do arquivo que contem os resultados de fluorescencia de cada amostra
 
 
-*Importante:*
+**Importante:**
 1 - O cabecalho do arquivo de metadados esteja na ordem listada acima.
+
 2 - O usuario deve garantir que os valores de emissao e excitacao das referencias, branco e amostras foram realizados nas mesmas faixas
 
 Nos arquivos de exemplo, foram lidos 31 valores de emissao em 51 diferentes valores de excitacao, em um total de 1581 observacoes por amostra.
