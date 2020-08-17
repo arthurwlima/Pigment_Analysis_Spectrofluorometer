@@ -22,7 +22,9 @@ Referencias - [6,1581]
 
 
 Script depende de quatro arquivos de entrada (.csv) e retorna dois arquivos (.csv) com as concentracoes estimadas dos pigmentos (mg/L).
+
 **Arquivos de entrada:**
+
 - Arquivo metadados 
 
 - Arquivo Fluorescencias do Branco
@@ -32,12 +34,14 @@ Script depende de quatro arquivos de entrada (.csv) e retorna dois arquivos (.cs
 - Arquivo Fluorescencias da amostra
 
 **Saida:**
+
 - Concentracao dos pigmentos a partir da solucao exata do metodo de minimos quadrados. Pode ter concentraóes com valores negativos;
 
 - Concentracao dos pigmentos a partir da solucao aproximada, removendo valores negativos.
 
 
 **Arquivo metadados:**
+
 Ponto_campo; Amostra; Data; Volume_Coleta_L; Volume_extrato_ml; Diluicao; Extrato_Dil; Nome_Fluor
 
 Ponto_campo       - Ponto de Coleta
@@ -58,8 +62,11 @@ Nome_Fluor        - Nome do arquivo que contem os resultados de fluorescencia de
 
 
 **Importante:**
+
 1 - O cabecalho do arquivo de metadados esteja na ordem listada acima.
 
 2 - O usuario deve garantir que os valores de emissao e excitacao das referencias, branco e amostras foram realizados nas mesmas faixas
+
+
 
 Nos arquivos de exemplo, foram lidos 31 valores de emissao em 51 diferentes valores de excitacao, em um total de 1581 observacoes por amostra.
