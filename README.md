@@ -14,7 +14,7 @@ Assim, para cada valor de excitacao, o valor de emissao observado na amostra é 
 
 Em forma matricial:
 
-FluorAmostra = concentracoes x Referencias
+*FluorAmostra = concentracoes x Referencias*
 
 FluorAmostra - [1,1581]
 concentracoes - [1,6]
@@ -45,7 +45,7 @@ Extrato_Dil       - Porduto entre o volume do extrato e a diluicao
 Nome_Fluor        - Nome do arquivo que contem os resultados de fluorescencia de cada amostra
 
 
-Dois pontos importantes:
+*Importante:*
 1 - O cabecalho do arquivo de metadados esteja na ordem listada acima.
 2 - O usuario deve garantir que os valores de emissao e excitacao das referencias, branco e amostras foram realizados nas mesmas faixas
 
