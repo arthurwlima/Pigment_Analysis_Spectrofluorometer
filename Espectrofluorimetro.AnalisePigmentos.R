@@ -58,7 +58,7 @@ for (i in 1:length(d$Amostra)){
 	dd=0
 	print(as.character(d[i,9]))
 	
-	# Checar a existencia do arquivo de resultados do espectrofluorimetro para cada amostra (d[,i9])
+	# Checar a existencia do arquivo de resultados do espectrofluorimetro para cada amostra (d[i,9])
 	# Confirmar se a matriz de resultados tem a mesma dimensao que a matriz de 
 	# resultados do "Branco"
 	# Resultados do espectrofluorimetro armazenado no objeto 'dd'
