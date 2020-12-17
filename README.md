@@ -2,45 +2,36 @@
 Analise de concentracao de pigmentos clorofilianos em amostras ambientais heterogeneas
 
 Script R para determinar a concentracao de pigmentos clorofilianos em uma amostra ambiental heterogenea. 
-Traducao/adaptacao do script Matlab (Neveux, cedido pelo Marcio Tenorio). Metodo de minimos quadrados descrito em:
+Traducao/adaptacao do script Matlab (Neveux, cedido pelo Marcio). Metodo de minimos quadrados descrito em:
 Neveux & Lantoine (1993) Deep-Sea Research I (40) 1747; Tenorio et al (2005) Est Cost Shelf Sci 531.
 
 Amostras ambientais sao filtradas em filtros GF/F e os pigmentos da amostra sao extraidos em acetona 90%. 
 Amostras lidas em espectrofluorimetro Varian Cary Eclipse, com excitacoes entre XXX e XXX. 
 Para cada faixa de excitacao sao registrados os valores de emissao da amostra em XXX faixas.
 
-Nos arquivos de exemplo, foram lidos 31 valores de emissao em 51 diferentes valores de excitacao, em um total de 1581 observacoes por amostra.
+Nos arquivos de exemplo, foram lidos 31 valores de emissao em 51 diferentes comprimentos de onda de excitacao, em um total de 1581 observacoes por arquivo (amostras, branco e referencias).
 
 
 O padrao de fluorescencia da amostra depende dos diferentes pigmentos contidos, alem da concentracao de cada um deles.
 Assim, para cada valor de excitacao, o valor de emissao observado na amostra é uma combinacao linear da fluorescencia emitida pelos diferentes pigmentos.
 
-Em forma matricial:
-
-**FluorAmostra = Concentracoes x FluorReferencias**
-
-FluorAmostra: [1,1581]
-
-Concentracoes: [1,6]
-
-FluorReferencias: [6,1581]
 
 
 Script depende de quatro arquivos de entrada (.csv) e retorna dois arquivos (.csv) com as concentracoes estimadas dos pigmentos (mg/L).
 
 **Arquivos de entrada:**
 
-- Arquivo metadados 
+- Arquivo metadados das amostras, contendo os volumes filtrados 
 
-- Arquivo Fluorescencias do Branco
+- Arquivo com as emissoes de fluorescencia para cada comprimento de excitação do **Branco**
 
-- Arquivo Fluorescencias das Referencias
+- Arquivo com as emissoes de fluorescencia para cada comprimento de excitação das **Referencias**
 
-- Arquivo Fluorescencias da amostra
+- Arquivo com as emissoes de fluorescencia para cada comprimento de excitação da **Amostra**
 
 **Saida:**
 
-- Concentracao dos pigmentos a partir da solucao exata do metodo de minimos quadrados. Pode ter concentraóes com valores negativos;
+- Concentracao dos pigmentos a partir da solucao exata do metodo de minimos quadrados. Pode ter concentrações com valores negativos;
 
 - Concentracao dos pigmentos a partir da solucao aproximada, removendo valores negativos.
 
@@ -70,5 +61,5 @@ Nome_Fluor        - Nome do arquivo que contem os resultados de fluorescencia de
 
 1 - O cabecalho do arquivo de metadados esteja na ordem listada acima.
 
-2 - O usuario deve garantir que os valores de emissao e excitacao das referencias, branco e amostras foram realizados nas mesmas faixas
+2 - Garantir que os valores de emissao e excitacao das referencias, branco e amostras foram realizados nas mesmas faixas
 
