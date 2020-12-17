@@ -6,6 +6,9 @@
 # Deep-Sea Research I (40) 1747; Tenorio et al (2005) Est Cost Shelf Sci 531.        #
 ######################################################################################
 
+# Apaga os objetos carregados anteriormente. Linha para evitar rodar o script com arquivos antigos
+rm(list=ls())
+
 #####################################################################################
 ######## MODIFICAR ESSA SECAO DO SCRIPT COM OS ARQUIVOS A SEREM USADOS ##############
 #####################################################################################
