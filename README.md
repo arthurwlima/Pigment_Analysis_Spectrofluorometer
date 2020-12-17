@@ -17,6 +17,8 @@ Nos arquivos de exemplo, foram lidos 31 valores de emissao em 51 diferentes comp
 O padrao de fluorescencia da amostra depende dos diferentes pigmentos contidos, alem da concentracao de cada um deles.
 Assim, para cada valor de excitacao, o valor de emissao observado na amostra é uma combinacao linear da fluorescencia emitida pelos diferentes pigmentos.
 
+
+
 **Modo de Executar**
 
 Abrir o arquivo "Espectrofluorimetro.AnalisePigmentos.R" no R/RStudio e executar os comandos bloco a bloco.
