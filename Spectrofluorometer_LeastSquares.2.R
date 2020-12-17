@@ -6,35 +6,50 @@
 # Deep-Sea Research I (40) 1747; Tenorio et al (2005) Est Cost Shelf Sci 531.        #
 ######################################################################################
 
-# Pacote 'nnls' necessario
-install.packages("nnls")
-require('nnls')
+#####################################################################################
+######## MODIFICAR ESSA SECAO DO SCRIPT COM OS ARQUIVOS A SEREM USADOS ##############
+#####################################################################################
+
+# Modificar as linhas abaixo com o nome dos arquivos de entrada 
+ArqMetadados <- "Metadados.Amostras.Pigmentos.csv"
+ArqBranco <- "branco1.csv"
+ArqReferencias <- "CLS700V_6pig_2019.dat"
+
+# Definir os nomes dos arquivos de saida
+ArqResult <- "Pigment.result.csv"
+ArqResultNNLS <- "Pigment.result.NaoNegativo.csv"
 
 # Modificar o endereco para indicar a pasta onde estao os arquivos de amostras, branco e resultados
 setwd("/home/arthurw/Documents/scripts/Pigment/170320/")
 
+#####################################################################################
+############## NAO MODIFICAR O SCRIPT ABAIXO DESSA LINHA ############################
+#####################################################################################
+
+# Pacote 'nnls' necessario
+install.packages("nnls")
+require('nnls')
+
 # Ler o arquivo com os metadados do processamento de extracao de pigmentos, contendo:
-d <- read.table("./Metadados.Amostras.Pigmentos.csv", header=T, sep='\t')
+d <- read.table(ArqMetadados, header=T, sep='\t')
 
 # Ler o arquivo com os resultados do spectrofluorimetro para o branco (acetona 90%)
-dBr <- read.table("./branco1.csv", header=T, sep=',', skip=1)
+dBr <- read.table(ArqBranco, header=T, sep=',', skip=1)
 
 
 # Ler os resultados de excitacao e emissao de 6 pigmentos de referencia
 # ('Chl a', 'Chl b', 'chl c1+2', 'Phe a', 'Phe b', 'Phe c')
-dRef <- read.table("./CLS700V_6pig_2019.dat", sep='\t')
+dRef <- read.table(ArqReferencias, sep='\t')
 mref <- matrix(dRef$V1, nrow=1581,ncol=7)
-
 
 
 # Criar o arquivo de saida e escrever o cabecalho
 write.table(t(c('Amostra', 'Chl a', 'Chl b', 'chl c1+2', 'Phe a', 'Phe b', 'Phe c', 'H')),
-            "Pigment.result.csv", row.names=F, sep=',', col.names=F, quote=F)
+            ArqResult, row.names=F, sep=',', col.names=F, quote=F)
 
 # Criar o arquivo de saida da solucao aproximada e escrever o cabecalho
 write.table(t(c('Amostra', 'Chl a', 'Chl b', 'chl c1+2', 'Phe a', 'Phe b', 'Phe c', 'H')), 
-            "Pigment.result.nnls.csv", row.names=F, sep=',', col.names=F, quote=F)
-
+            ArqResultNNLS row.names=F, sep=',', col.names=F, quote=F)
 
 
 for (i in 1:length(d$Amostra)){
@@ -88,10 +103,10 @@ for (i in 1:length(d$Amostra)){
 
 
 		linha <- t(c(as.character(d[i,2]),ve*dadosLS))
-		write.table(linha, "Pigment.result.csv", row.names=F, sep=',', append=T, col.names=F, quote=F)
+		write.table(linha, ArqResult, row.names=F, sep=',', append=T, col.names=F, quote=F)
 
-	  linha0 <- t(c(as.character(d[i,2]),ve*dadosLS0$x))
-		write.table(linha0, "Pigment.result.nnls.csv", row.names=F, sep=',', append=T, col.names=F, quote=F)
+	        linha0 <- t(c(as.character(d[i,2]),ve*dadosLS0$x))
+		write.table(linha0, ArqResultNNLS, row.names=F, sep=',', append=T, col.names=F, quote=F)
 	}
 }
 
