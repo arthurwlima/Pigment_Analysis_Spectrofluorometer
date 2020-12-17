@@ -10,7 +10,7 @@
 install.packages("nnls")
 require('nnls')
 
-# Ajustar o endereco para a pasta onde estao os arquivos de amostras, branco e resultados
+# Modificar o endereco para indicar a pasta onde estao os arquivos de amostras, branco e resultados
 setwd("/home/arthurw/Documents/scripts/Pigment/170320/")
 
 # Ler o arquivo com os metadados do processamento de extracao de pigmentos, contendo:
