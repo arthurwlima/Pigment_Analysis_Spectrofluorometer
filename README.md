@@ -53,4 +53,4 @@ Script depende de quatro arquivos de entrada (.csv) e retorna dois arquivos (.cs
 
 2 - Garantir que foram usados os mesmos valores de emissao e excitacao para as referencias, branco e amostras.
 
-3 - Renomear os arquivos de saida no script, se for executar o novamente na mesma pasta. Caso contrario, o script ira sobreescrever o resultado anterior.
+3 - Renomear os arquivos de saida no script, se for executar o novamente na mesma pasta. Caso contrario, o script ira sobre-escrever o resultado anterior.
