@@ -1,7 +1,7 @@
 # Pigment_Analysis_Spectrofluorometer
 Analise de concentracao de pigmentos clorofilianos em amostras ambientais heterogeneas
 
-Abrir o arquivo "Spectrofluorometer_LeastSquares.R" no R/RStudio e executar os comandos bloco a bloco.
+Abrir o arquivo "Espectrofluorimetro.AnalisePigmentos.R" no R/RStudio e executar os comandos bloco a bloco.
 
 Script R para determinar a concentracao de pigmentos clorofilianos em uma amostra ambiental heterogenea. 
 Traducao/adaptacao do script Matlab (Neveux, cedido pelo Marcio). Metodo de minimos quadrados descrito em:
