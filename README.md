@@ -8,8 +8,8 @@ Traducao/adaptacao do script Matlab (Neveux, cedido pelo Marcio). Metodo de mini
 Neveux & Lantoine (1993) Deep-Sea Research I (40) 1747; Tenorio et al (2005) Est Cost Shelf Sci 531.
 
 Amostras ambientais sao filtradas em filtros GF/F e os pigmentos da amostra sao extraidos em acetona 90%. 
-Amostras lidas em espectrofluorimetro Varian Cary Eclipse, com excitacoes entre XXX e XXX. 
-Para cada faixa de excitacao sao registrados os valores de emissao da amostra em XXX faixas.
+Amostras lidas em espectrofluorimetro Varian Cary Eclipse, com excitacoes entre 614.9nm e 714.9nm. 
+Para cada faixa de excitacao sao registrados os valores de emissao da amostra em 31 faixas.
 
 Nos arquivos de exemplo, foram lidos 31 valores de emissao em 51 diferentes comprimentos de onda de excitacao, em um total de 1581 observacoes por arquivo (amostras, branco e referencias).
 
