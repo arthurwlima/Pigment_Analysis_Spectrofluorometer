@@ -2,7 +2,7 @@
 ####################### Arthur Lima 2020.03.17 ##################################
 # Script R para determinar a concentracao de pigmentos clorofilianos em uma     #
 # amostra ambiental heterogenea. Traducao do script Matlab (Neveux, cedido pelo #
-# Marcio Tenorio).                                                              #
+# Marcio).                                                                      #
 # Metodo de minimos quadrados descrito em Neveux & Lantoine (1993)              # 
 # Deep-Sea Research I (40) 1747; Tenorio et al (2005) Est Cost Shelf Sci 531.   #
 #                                                                               #
@@ -40,7 +40,7 @@ for (i in 1:length(d$Amostra)){
 	dd=0
 	print(as.character(d[i,9]))
 	
-	# Checar a existencia de cada arquivo de saida do espectrofluorimetro (d[,i9])
+	# Checar a existencia do arquivo de resultados do espectrofluorimetro para cada amostra (d[,i9])
 	# Confirmar se a matriz de resultados tem a mesma dimensao que a matriz de 
 	# resultados do "Branco"
 	# Resultados do espectrofluorimetro armazenado no objeto 'dd'
