@@ -10,6 +10,9 @@
 ######## MODIFICAR ESSA SECAO DO SCRIPT COM OS ARQUIVOS A SEREM USADOS ##############
 #####################################################################################
 
+# Modificar o endereco para indicar a pasta onde estao os arquivos de amostras, branco e resultados
+setwd("/home/arthurw/Documents/scripts/Pigment/170320/")
+
 # Modificar as linhas abaixo com o nome dos arquivos de entrada 
 ArqMetadados <- "Metadados.Amostras.Pigmentos.csv"
 ArqBranco <- "branco1.csv"
@@ -18,9 +21,6 @@ ArqReferencias <- "CLS700V_6pig_2019.dat"
 # Definir os nomes dos arquivos de saida
 ArqResult <- "Pigment.result.csv"
 ArqResultNNLS <- "Pigment.result.NaoNegativo.csv"
-
-# Modificar o endereco para indicar a pasta onde estao os arquivos de amostras, branco e resultados
-setwd("/home/arthurw/Documents/scripts/Pigment/170320/")
 
 #####################################################################################
 ############## NAO MODIFICAR O SCRIPT ABAIXO DESSA LINHA ############################
