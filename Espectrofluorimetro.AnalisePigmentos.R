@@ -107,6 +107,9 @@ for (i in 1:length(d$Amostra)){
 
 	        linha0 <- t(c(as.character(d[i,2]),ve*dadosLS0$x))
 		write.table(linha0, ArqResultNNLS, row.names=F, sep=',', append=T, col.names=F, quote=F)
+	}	
+	else{
+		print(paste("Arquivo ", as.character(d[i,9]), " nao encontrado na pasta atual", sep=""))
 	}
 }
 
