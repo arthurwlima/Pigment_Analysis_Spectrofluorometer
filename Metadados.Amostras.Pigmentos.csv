@@ -1,0 +1,5 @@
+Ponto_campo,Amostra,Data,Volume_Coleta_L,Volume_extrato_ml,Diluicao,Extrato_Dil,Nome_Fluor,Nome_Fluor2
+P25,P25.2.R1,20191218,0.135,6,1,6,17,Para17.csv
+P25,P25.2.R2,20191218,0.09,6,1,6,28,Para28.csv
+P27,P27.R1,20191218,0.255,6,2,12,82,Para82.csv
+P27,P27.R2,20191218,0.25,6,2,12,84,Para84.csv
