@@ -31,7 +31,7 @@ install.packages("nnls")
 require('nnls')
 
 # Ler o arquivo com os metadados do processamento de extracao de pigmentos, contendo:
-d <- read.table(ArqMetadados, header=T, sep='\t')
+d <- read.table(ArqMetadados, header=T, sep=',')
 
 # Ler o arquivo com os resultados do spectrofluorimetro para o branco (acetona 90%)
 dBr <- read.table(ArqBranco, header=T, sep=',', skip=1)
