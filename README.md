@@ -1,9 +1,10 @@
 # Pigment_Analysis_Spectrofluorometer
-Analise de concentracao de pigmentos clorofilianos em amostras ambientais heterogeneas
+Analise de concentracao de pigmentos clorofilianos em amostras ambientais
 
-Script R para determinar a concentracao de pigmentos clorofilianos em uma amostra ambiental heterogenea. 
-Traducao/adaptacao do script Matlab (Neveux, cedido pelo Marcio). Metodo de minimos quadrados descrito em:
-Neveux & Lantoine (1993) Deep-Sea Research I (40) 1747; Tenorio et al (2005) Est Cost Shelf Sci 531.
+Determinar a concentracao de pigmentos clorofilianos em uma amostra ambiental heterogenea, a partir do padrao 
+de fluorescencia emitido por pigmentos conhecidos. Traducao/adaptacao do script Matlab (Neveux, cedido pelo Marcio Tenorio).
+Padrao dos pigmentos 'Chl a', 'Chl b', 'chl c1+2', 'Phe a', 'Phe b', 'Phe c' no arquivo "CLS700V_6pig_2019.dat" (novamente fornecido pelo Marcio).
+Metodo de minimos quadrados descrito em: Neveux & Lantoine (1993) Deep-Sea Research I (40) 1747; Tenorio et al (2005) Est Cost Shelf Sci 531.
 
 Amostras ambientais sao filtradas em filtros GF/F e os pigmentos da amostra sao extraidos em acetona 90%. 
 Amostras lidas em espectrofluorimetro Varian Cary Eclipse, com excitacoes entre 614.9nm e 714.9nm. 
