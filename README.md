@@ -1,8 +1,6 @@
 # Pigment_Analysis_Spectrofluorometer
 Analise de concentracao de pigmentos clorofilianos em amostras ambientais heterogeneas
 
-Abrir o arquivo "Espectrofluorimetro.AnalisePigmentos.R" no R/RStudio e executar os comandos bloco a bloco.
-
 Script R para determinar a concentracao de pigmentos clorofilianos em uma amostra ambiental heterogenea. 
 Traducao/adaptacao do script Matlab (Neveux, cedido pelo Marcio). Metodo de minimos quadrados descrito em:
 Neveux & Lantoine (1993) Deep-Sea Research I (40) 1747; Tenorio et al (2005) Est Cost Shelf Sci 531.
@@ -16,7 +14,9 @@ Nos arquivos de exemplo, foram lidos 31 valores de emissao em 51 diferentes comp
 O padrao de fluorescencia da amostra depende dos diferentes pigmentos contidos, alem da concentracao de cada um deles.
 Assim, para cada valor de excitacao, o valor de emissao observado na amostra é uma combinacao linear da fluorescencia emitida pelos diferentes pigmentos.
 
+**Modo de Executar**
 
+Abrir o arquivo "Espectrofluorimetro.AnalisePigmentos.R" no R/RStudio e executar os comandos bloco a bloco.
 
 Script depende de quatro arquivos de entrada (.csv) e retorna dois arquivos (.csv) com as concentracoes estimadas dos pigmentos (mg/L). 
 **Os arquivos de entrada devem estar todos na mesma pasta**
@@ -30,7 +30,6 @@ Script depende de quatro arquivos de entrada (.csv) e retorna dois arquivos (.cs
 **Saida:**
 
 - Concentracao dos pigmentos a partir da solucao exata do metodo de minimos quadrados. Pode ter concentrações com valores negativos;
-
 - Concentracao dos pigmentos a partir da solucao aproximada, removendo valores negativos.
 
 
@@ -51,5 +50,6 @@ Script depende de quatro arquivos de entrada (.csv) e retorna dois arquivos (.cs
 
 1 - Garantir que o cabecalho do arquivo de metadados esteja na ordem listada acima. Na duvida, compare com o arquivo "Metadados.Amostras.Pigmentos.csv", no link de cima da pagina.
 
-2 - Garantir que foram usados os mesmos valores de emissao e excitacao para as referencias, branco e amostras
+2 - Garantir que foram usados os mesmos valores de emissao e excitacao para as referencias, branco e amostras.
 
+3 - Renomear os arquivos de saida no script, se for executar o novamente na mesma pasta. Caso contrario, o script ira sobreescrever o resultado anterior.
