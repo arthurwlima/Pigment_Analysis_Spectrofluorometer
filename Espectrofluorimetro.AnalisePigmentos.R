@@ -18,7 +18,8 @@ ArqMetadados <- "Metadados.Amostras.Pigmentos.csv"
 ArqBranco <- "branco1.csv"
 ArqReferencias <- "CLS700V_6pig_2019.dat"
 
-# Definir os nomes dos arquivos de saida
+# Definir os nomes dos arquivos de saida. Atualizar os nomes para evitar que o 
+# script sobre-escreva rersultados anteriores
 ArqResult <- "Pigment.result.csv"
 ArqResultNNLS <- "Pigment.result.NaoNegativo.csv"
 
