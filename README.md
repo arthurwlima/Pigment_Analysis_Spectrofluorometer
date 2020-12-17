@@ -27,10 +27,10 @@ Script depende de quatro arquivos de entrada (.csv) e retorna dois arquivos (.cs
 - Arquivo com as emissoes de fluorescencia para cada comprimento de excitação das **Referencias**
 - Arquivo com as emissoes de fluorescencia para cada comprimento de excitação da **Amostra**
 
-**Saida:**
 
-- Concentracao dos pigmentos a partir da solucao exata do metodo de minimos quadrados. Pode ter concentrações com valores negativos;
-- Concentracao dos pigmentos a partir da solucao aproximada, removendo valores negativos.
+**Saida:**
+- Concentracao dos pigmentos na amostra, a partir da solucao exata do metodo de minimos quadrados. Pode ter concentrações com valores negativos;
+- Concentracao dos pigmentos na amostra, a partir da solucao aproximada removendo valores negativos.
 
 
 **Arquivo metadados:**
@@ -48,7 +48,7 @@ Script depende de quatro arquivos de entrada (.csv) e retorna dois arquivos (.cs
 
 **Importante:**
 
-1 - Garantir que o cabecalho do arquivo de metadados esteja na ordem listada acima. Na duvida, compare com o arquivo "Metadados.Amostras.Pigmentos.csv", no link de cima da pagina.
+1 - É fundamental garantir que o arquivo de metadados tenha a estrutura listada acima. Na duvida, comparar com o arquivo "Metadados.Amostras.Pigmentos.csv", no link de cima da pagina.
 
 2 - Garantir que foram usados os mesmos valores de emissao e excitacao para as referencias, branco e amostras.
 
