@@ -49,7 +49,7 @@ Script depende de quatro arquivos de entrada (.csv) e retorna dois arquivos (.cs
 
 **Importante:**
 
-1 - Garantir que o cabecalho do arquivo de metadados esteja na ordem listada acima.
+1 - Garantir que o cabecalho do arquivo de metadados esteja na ordem listada acima. Na duvida, compare com o arquivo "Metadados.Amostras.Pigmentos.csv", no link de cima da pagina.
 
 2 - Garantir que foram usados os mesmos valores de emissao e excitacao para as referencias, branco e amostras
 
