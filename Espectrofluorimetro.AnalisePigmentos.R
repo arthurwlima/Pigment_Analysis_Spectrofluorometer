@@ -23,12 +23,13 @@ ArqReferencias <- "CLS700V_6pig_2019.dat"
 ArqResult <- "Pigment.result.csv"
 ArqResultNNLS <- "Pigment.result.NaoNegativo.csv"
 
+# Pacote 'nnls' necessario. Comentar essa linha caso o pacote ja esteja instalado
+install.packages("nnls")
+
 #####################################################################################
 ############## NAO MODIFICAR O SCRIPT ABAIXO DESSA LINHA ############################
 #####################################################################################
 
-# Pacote 'nnls' necessario
-install.packages("nnls")
 require('nnls')
 
 # Ler o arquivo com os metadados do processamento de extracao de pigmentos, contendo:
@@ -50,7 +51,7 @@ write.table(t(c('Amostra', 'Chl a', 'Chl b', 'chl c1+2', 'Phe a', 'Phe b', 'Phe 
 
 # Criar o arquivo de saida da solucao aproximada e escrever o cabecalho
 write.table(t(c('Amostra', 'Chl a', 'Chl b', 'chl c1+2', 'Phe a', 'Phe b', 'Phe c', 'H')), 
-            ArqResultNNLS row.names=F, sep=',', col.names=F, quote=F)
+            ArqResultNNLS, row.names=F, sep=',', col.names=F, quote=F)
 
 
 for (i in 1:length(d$Amostra)){
