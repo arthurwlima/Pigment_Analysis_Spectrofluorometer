@@ -35,13 +35,14 @@ Script depende de quatro arquivos de entrada (.csv) e retorna dois arquivos (.cs
 
 **Arquivo metadados:**
 
-**Ponto_campo; Amostra; Data; Volume_Coleta_L; Volume_extrato_ml; Diluicao; Extrato_Dil; Nome_Fluor**
+**Ponto_campo, Amostra, Data, Volume_Coleta_L, Volume_extrato_ml, Diluicao, Extrato_Dil, Nome_tubo, Nome_Fluor**
 - Ponto_campo       : Ponto de Coleta
 - Amostra           : Codigo da Amostra
 - Data              : Data de coleta
 - Volume_Coleta_L   : Volume da coleta em litros
 - Volume_extrato_ml : Volume da extracao em mL
 - Diluicao          : Diluicao usada pra ler o extrato no espectrofluorimetro
+- Extrato_Dil       : Porduto entre o volume do extrato e a diluicao
 - Nome_tubo         : Nome do tubo usado para ler a amostra no espectrofluorimetro
 - Nome_Fluor        : Nome do arquivo que contem os resultados de fluorescencia de cada amostra
 
