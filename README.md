@@ -2,8 +2,8 @@
 Analise de concentracao de pigmentos clorofilianos em amostras ambientais
 
 Determinar a concentracao de pigmentos clorofilianos em uma amostra ambiental heterogenea, a partir do padrao 
-de fluorescencia emitido por pigmentos conhecidos. Traducao/adaptacao do script Matlab (Neveux, cedido pelo Marcio Tenorio).
-Padrao dos pigmentos 'Chl a', 'Chl b', 'chl c1+2', 'Phe a', 'Phe b', 'Phe c' no arquivo "CLS700V_6pig_2019.dat" (novamente fornecido pelo Marcio).
+de fluorescencia emitido por pigmentos conhecidos. Traducao/adaptacao do script Matlab (Neveux, cedido pelo Marcio Tenorio).\n
+Padrao dos pigmentos 'Chl a', 'Chl b', 'chl c1+2', 'Phe a', 'Phe b', 'Phe c' no arquivo "CLS700V_6pig_2019.dat" (novamente fornecido pelo Marcio).\n
 Metodo de minimos quadrados descrito em: Neveux & Lantoine (1993) Deep-Sea Research I (40) 1747; Tenorio et al (2005) Est Cost Shelf Sci 531.
 
 Amostras ambientais sao filtradas em filtros GF/F e os pigmentos da amostra sao extraidos em acetona 90%. 
