@@ -42,13 +42,13 @@ Script depende de quatro arquivos de entrada (.csv) e retorna dois arquivos (.cs
 - Volume_Coleta_L   : Volume da coleta em litros
 - Volume_extrato_ml : Volume da extracao em mL
 - Diluicao          : Diluicao usada pra ler o extrato no espectrofluorimetro
-- Extrato_Dil       : Porduto entre o volume do extrato e a diluicao
+- Nome_tubo         : Nome do tubo usado para ler a amostra no espectrofluorimetro
 - Nome_Fluor        : Nome do arquivo que contem os resultados de fluorescencia de cada amostra
 
 
 **Importante:**
 
-1 - É fundamental garantir que o arquivo de metadados tenha a estrutura listada acima. Na duvida, comparar com o arquivo "Metadados.Amostras.Pigmentos.csv", no link de cima da pagina.
+1 - É fundamental garantir que o arquivo de metadados tenha a estrutura listada acima. Os campos devem ser separados por ',' e ponto como o separador decimal. Na duvida, comparar com o arquivo "Metadados.Amostras.Pigmentos.csv", no link de cima da pagina.
 
 2 - Garantir que foram usados os mesmos valores de emissao e excitacao para as referencias, branco e amostras.
 
