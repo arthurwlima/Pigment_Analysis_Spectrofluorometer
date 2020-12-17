@@ -29,11 +29,11 @@ mref <- matrix(dRef$V1, nrow=1581,ncol=7)
 
 # Criar o arquivo de saida e escrever o cabecalho
 write.table(t(c('Amostra', 'Chl a', 'Chl b', 'chl c1+2', 'Phe a', 'Phe b', 'Phe c', 'H')),
-            "Paraopeba.chuvoso.result.csv", row.names=F, sep=',', col.names=F, quote=F)
+            "Pigment.result.csv", row.names=F, sep=',', col.names=F, quote=F)
 
 # Criar o arquivo de saida da solucao aproximada e escrever o cabecalho
 write.table(t(c('Amostra', 'Chl a', 'Chl b', 'chl c1+2', 'Phe a', 'Phe b', 'Phe c', 'H')), 
-            "Paraopeba.chuvoso.result.nnls.csv", row.names=F, sep=',', col.names=F, quote=F)
+            "Pigment.result.nnls.csv", row.names=F, sep=',', col.names=F, quote=F)
 
 
 
