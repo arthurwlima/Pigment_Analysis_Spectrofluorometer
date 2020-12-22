@@ -7,19 +7,20 @@ de fluorescencia emitido por pigmentos conhecidos. Traducao/adaptacao do script 
 Padrao dos pigmentos 'Chl a', 'Chl b', 'chl c1+2', 'Phe a', 'Phe b', 'Phe c' no arquivo "CLS700V_6pig_2019.dat" (fornecedor - Marcio). Metodo de minimos quadrados descrito em: Neveux & Lantoine (1993) Deep-Sea Research I (40) 1747; Tenorio et al (2005) Est Cost Shelf Sci 531.
 
 Amostras ambientais sao filtradas em filtros GF/F e os pigmentos da amostra sao extraidos em acetona 90%. 
-Amostras lidas em espectrofluorimetro Varian Cary Eclipse, com excitacoes entre 614.9nm e 714.9nm. 
-Para cada faixa de excitacao sao registrados os valores de emissao da amostra em 31 faixas.
+Amostras lidas em espectrofluorimetro Varian Cary Eclipse, com excitação entre 390nm e 480nm (Violeta-Azul). 
+Para cada faixa de excitacao sao registrados os valores de emissao da amostra de 614.9nm e 714.9nm (Vermelho).
 
-Nos arquivos de exemplo, foram lidos 31 valores de emissao em 51 diferentes comprimentos de onda de excitacao, em um total de 1581 observacoes por arquivo (amostras, branco e referencias).
+Nos arquivos de exemplo, foram lidos 51 valores de emissao em 31 diferentes comprimentos de onda de excitacao, em um total de 1581 observacoes por arquivo (amostras, branco e referencias).
 
 O padrao de fluorescencia da amostra depende dos diferentes pigmentos contidos, alem da concentracao de cada um deles.
-Assim, para cada valor de excitacao, o valor de emissao observado na amostra é uma combinacao linear da fluorescencia emitida pelos diferentes pigmentos.
+Assim, para cada valor de excitacao, o valor de emissao observado na amostra é uma combinacao da fluorescencia emitida pelos diferentes pigmentos.
 
 
 
 **Modo de Executar**
 
-Abrir o arquivo "Espectrofluorimetro.AnalisePigmentos.R" no R/RStudio e executar os comandos bloco a bloco.
+Abrir o arquivo "Espectrofluorimetro.AnalisePigmentos.R" no R / RStudio e executar os comandos bloco a bloco. 
+(No RStudio: apertar Ctrl+Enter em cada linha do script. No R: copiar cada bloco do script para o terminal)
 
 Script depende de quatro arquivos de entrada (.csv) e retorna dois arquivos (.csv) com as concentracoes estimadas dos pigmentos (mg/L). 
 **Os arquivos de entrada devem estar todos na mesma pasta**
