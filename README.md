@@ -10,7 +10,7 @@ Amostras ambientais sao filtradas em filtros GF/F e os pigmentos da amostra sao 
 Amostras lidas em espectrofluorimetro Varian Cary Eclipse, com excitação entre 390nm e 480nm (Violeta-Azul). 
 Para cada faixa de excitacao sao registrados os valores de emissao da amostra de 614.9nm e 714.9nm (Vermelho).
 
-Nos arquivos de exemplo, foram lidos 51 valores de emissao em 31 diferentes comprimentos de onda de excitacao, em um total de 1581 observacoes por arquivo (amostras, branco e referencias).
+Nos arquivos de exemplo, foram lidos 31 valores de emissao em 51 diferentes comprimentos de onda de excitacao, em um total de 1581 observacoes por arquivo (amostras, branco e referencias).
 
 O padrao de fluorescencia da amostra depende dos diferentes pigmentos contidos, alem da concentracao de cada um deles.
 Assim, para cada valor de excitacao, o valor de emissao observado na amostra é uma combinacao da fluorescencia emitida pelos diferentes pigmentos.
